@@ -1,15 +1,12 @@
-$primary: #003358;
-$secopndary: #4da5d7;
-$tertiary: #7428a0;
-$success: #279727;
-$warning: #daad1b;
-$danger: #bd1b1b;
-$white: #ffffff;
-$dark: #000000;
+@import "./container.scss";
+@import "./colors.scss";
+@import "./spacers.scss";
+
+$font-family-sans-serif: 'Roboto';
 
 $theme-colors: (
   "primary": $primary,
-  "secopndary": $secopndary,
+  "secondary": $secondary,
   "tertiary": $tertiary,
   "success": $success,
   "warning": $warning,
@@ -29,5 +26,3 @@ $spacers: (
   6: $spacer * 5, // 40px
   7: $spacer * 6, //48px
 );
-
-$font-family-sans-serif: 'Roboto'

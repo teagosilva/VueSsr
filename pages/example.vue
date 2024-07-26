@@ -1,6 +1,12 @@
 <template>
   <div>
-    <ExampleComponent text="Example" />
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <ExampleComponent text="Example" />
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 

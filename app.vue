@@ -3,7 +3,8 @@
 
 <template>
   <div>
-    <Menu />
+  <Header />
+    <NavBar />
     <NuxtPage />
   </div>
 </template>

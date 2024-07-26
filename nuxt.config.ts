@@ -1,3 +1,5 @@
+import { fileURLToPath } from "url";
+
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   compatibilityDate: '2024-04-03',
@@ -35,5 +37,8 @@ export default defineNuxtConfig({
   modules: ["@nuxtjs/robots", "@nuxtjs/sitemap"],
   robots: {
     allow: ['/'],
+  },
+  alias: {
+    "@": fileURLToPath(new URL("./src/", import.meta.url))
   }
 })

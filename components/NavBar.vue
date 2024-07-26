@@ -3,9 +3,8 @@
 </script>
 
 <template>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Navbar</a>
+    <nav class="navbar navbar-expand-lg bg-primary">
+        <div class="container">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -13,10 +12,10 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <NuxtLink class="nav-link active" to="/">Home</NuxtLink>
+                        <NuxtLink class=" link-secondary nav-link active" to="/">Home</NuxtLink>
                     </li>
                     <li class="nav-item">
-                        <NuxtLink class="nav-link" to="/example">Example</NuxtLink>
+                        <NuxtLink class=" link-secondary nav-link" to="/example">Example</NuxtLink>
                     </li>
                 </ul>
             </div>
