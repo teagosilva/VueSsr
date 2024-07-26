@@ -3,6 +3,7 @@ export default defineNuxtConfig({
   compatibilityDate: '2024-04-03',
   devtools: { enabled: true },
   css: ['~/src/styles/main.scss'],
+
   app: {
     head: {
       charset: 'utf-8',
@@ -24,9 +25,15 @@ export default defineNuxtConfig({
       ]
     }
   },
+
   runtimeConfig: {
     public: {
       siteName: 'Default Nuxt App'
     }
+  },
+
+  modules: ["@nuxtjs/robots", "@nuxtjs/sitemap"],
+  robots: {
+    allow: ['/'],
   }
 })
