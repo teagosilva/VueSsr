@@ -1,0 +1,33 @@
+$primary: #003358;
+$secopndary: #4da5d7;
+$tertiary: #7428a0;
+$success: #279727;
+$warning: #daad1b;
+$danger: #bd1b1b;
+$white: #ffffff;
+$dark: #000000;
+
+$theme-colors: (
+  "primary": $primary,
+  "secopndary": $secopndary,
+  "tertiary": $tertiary,
+  "success": $success,
+  "warning": $warning,
+  "danger": $danger,
+  "white": $white,
+  "dark": $dark
+);
+
+$spacer: 8px;
+$spacers: (
+  0: 0,
+  1: $spacer  / 2, //4px
+  2: $spacer, //8px
+  3: $spacer * 2, //16px
+  4: $spacer *  3, //24px
+  5: $spacer * 4, //32px
+  6: $spacer * 5, // 40px
+  7: $spacer * 6, //48px
+);
+
+$font-family-sans-serif: 'Roboto'
