@@ -24,7 +24,7 @@
               <span class="icon-user fs-3"></span>
               Login
             </div>
-            <div class="col-6">
+            <div class="col-3">
               <span class="icon-cart fs-3"></span>
             </div>
           </div>
