@@ -20,8 +20,12 @@
 
         <div class="col-2">
           <div class="row">
-            <div class="col-6 fs-6"> <span class="icon-user-plus fs-4"></span> Login</div>
-            <div class="col-6 fs-6"><span class="icon-cart fs-4"></span></div>
+            <div class="col-6 fs-6">
+              <a href=""><span class="icon-user-plus fs-4"></span> Login</a>
+            </div>
+            <div class="col-6 fs-6">
+              <a href="#"><span class="icon-cart fs-4"></span></a>
+            </div>
           </div>
         </div>
 
