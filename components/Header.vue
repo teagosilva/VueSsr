@@ -18,14 +18,14 @@
           </form>
         </div>
 
-        <div class="col-2">
+        <div class="col-3">
           <div class="row">
             <div class="col-6">
-              <i class="icon-home2"></i>
+              <span class="icon-user fs-3"></span>
               Login
             </div>
             <div class="col-6">
-              Carrinho
+              <span class="icon-cart fs-3"></span>
             </div>
           </div>
         </div>
