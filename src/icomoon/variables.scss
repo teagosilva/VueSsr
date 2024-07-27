@@ -1,5 +1,5 @@
 $icomoon-font-family: "icomoon" !default;
-$icomoon-font-path: "@/icomoon/fonts" !default;
+$icomoon-font-path: $icomoonFonts !default;
 
 $icon-home: unquote('"\\e900"');
 $icon-home2: unquote('"\\e901"');
