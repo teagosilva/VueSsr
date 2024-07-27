@@ -1,4 +1,4 @@
-<script setup>
+<script>
 
 </script>
 
@@ -9,7 +9,7 @@
       <div class="row py-4 align-items-center">
 
         <div class="col-2 text-center">
-          <img src="@/images/logo.png" class="logo" alt="">
+          <img src="@/images/marvel.png" class="logo" alt="">
         </div>
 
         <div class="col">
@@ -18,20 +18,14 @@
           </form>
         </div>
 
-        <div class="col-3">
+        <div class="col-2">
           <div class="row">
-            <div class="col-6">
-              <span class="icon-user fs-3"></span>
-              Login
-            </div>
-            <div class="col-3">
-              <span class="icon-cart fs-3"></span>
-            </div>
+            <div class="col-6 fs-6"> <span class="icon-user-plus fs-4"></span> Login</div>
+            <div class="col-6 fs-6"><span class="icon-cart fs-4"></span></div>
           </div>
         </div>
 
       </div>
-
     </div>
   </header>
 </template>
