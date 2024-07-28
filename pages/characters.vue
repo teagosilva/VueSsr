@@ -3,9 +3,9 @@
 </script>
 
 <template>
-  <section id="home" class="text-center">
+  <section id="home">
     <img src="@/images/home.jpg" alt="">
-    <SectionTitle class="border " title="Home"/>
+    <SectionTitle title="Characters"/>
   </section>
 </template>
 

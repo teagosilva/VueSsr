@@ -5,7 +5,7 @@ defineProps({
     typr: String
   },
   subtitle: {
-    required: false,
+    required: true,
     typr: String
   },
   titleColor: {
@@ -24,7 +24,7 @@ defineProps({
 
 <template>
   <div>
-    <p :class="`text-${titleColor}`" class="section-title m-0 mt-1 fs-2">{{ title }}</p>
+    <p :class="`text-${titleColor}`" class="m-0 mt-1 fs-2">{{ title }}</p>
     <span :class="`text-${subtitleColor}`" class="fs-6">{{ subtitle }}</span>
   </div>
 </template>
