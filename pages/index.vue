@@ -1,18 +1,13 @@
-<template>
-  <div class="container">
-    <div class="row">
-      <div class="col-12">
-        <SectionTitle title="Home" subtitle="Subtitutlo home" titleColor="danger" subtitleColor="danger" />
-      </div>
-      <div class="col-12 mt-3">
-      </div>
-    </div>
-  </div>
-</template>
-
 <script lang="js" setup>
 
 </script>
+
+<template>
+  <section id="home">
+    <img src="https://fastly.picsum.photos/id/411/1718/429.jpg?hmac=m2dpDjOGIZMirBRULR6ybcYU7bJKA5zJaXu6gqeOC8U" alt="">
+  </section>
+</template>
+
 
 <style lang="scss" scoped>
 

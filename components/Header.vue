@@ -4,20 +4,19 @@
 
 
 <template>
-  <header id="header" class="d-none d-lg-block">
+  <header id="header" class="d-none d-lg-block py-4 ">
     <div class="container">
-      <div class="row py-4 align-items-center">
+      <div class="row align-items-center">
 
-        <div class="col-2 text-center">
+        <div class="col-2">
           <img src="@/images/marvel.png" class="logo" alt="">
         </div>
 
         <div class="col">
           <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <input class="form-control bg-body-tertiary" type="search" placeholder="Search" aria-label="Search">
           </form>
         </div>
-
         <div class="col-2">
           <div class="row">
             <div class="col-6 fs-6">

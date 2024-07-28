@@ -1,5 +1,32 @@
 <script lang="js" setup>
-
+const menu = useState('menu', () => {
+    return [
+        {
+            "name": "Home",
+            "url": "/"
+        },
+        {
+            "name": "Characters",
+            "url": "/characters"
+        },
+        {
+            "name": "Comics",
+            "url": "/comics"
+        },
+        {
+            "name": "Creators",
+            "url": "/creators"
+        },
+        {
+            "name": "Events",
+            "url": "/events"
+        },
+        {
+            "name": "Stories",
+            "url": "/stories"
+        },
+    ]
+})
 </script>
 
 <template>
@@ -11,11 +38,8 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <NuxtLink class=" link-secondary nav-link active" to="/">Home</NuxtLink>
-                    </li>
-                    <li class="nav-item">
-                        <NuxtLink class=" link-secondary nav-link" to="/example">Example</NuxtLink>
+                    <li class="nav-item" v-for="item in menu">
+                        <NuxtLink class=" link-secondary nav-link active" :to="item.url"> {{ item.name }}</NuxtLink>
                     </li>
                 </ul>
             </div>

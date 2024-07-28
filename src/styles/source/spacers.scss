@@ -1,10 +1,10 @@
 $spacers: (
   0: 0,
-  1: $spacer  / 2, //4px
+  1: calc($spacer  / 2), //4px
   2: $spacer, //8px
-  3: $spacer * 2, //16px
-  4: $spacer *  3, //24px
-  5: $spacer * 4, //32px
-  6: $spacer * 5, // 40px
-  7: $spacer * 6, //48px
+  3: calc($spacer * 2), //16px
+  4: calc($spacer * 3), //24px
+  5: calc($spacer * 4), //32px
+  6: calc($spacer * 5), // 40px
+  7: calc($spacer * 6), //48px
 );
