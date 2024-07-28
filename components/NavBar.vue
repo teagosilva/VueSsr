@@ -4,27 +4,7 @@ const menu = useState('menu', () => {
         {
             "name": "Home",
             "url": "/"
-        },
-        {
-            "name": "Characters",
-            "url": "/characters"
-        },
-        {
-            "name": "Comics",
-            "url": "/comics"
-        },
-        {
-            "name": "Creators",
-            "url": "/creators"
-        },
-        {
-            "name": "Events",
-            "url": "/events"
-        },
-        {
-            "name": "Stories",
-            "url": "/stories"
-        },
+        }
     ]
 })
 </script>
