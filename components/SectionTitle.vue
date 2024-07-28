@@ -5,7 +5,7 @@ defineProps({
     typr: String
   },
   subtitle: {
-    required: true,
+    required: false,
     typr: String
   },
   titleColor: {
