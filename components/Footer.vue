@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <footer class="bg-primary py-4 text-white">
+  <footer class="bg-primary py-4  mt-4 text-white">
     <div class="container">
       <div class="row align-items-center">
 
