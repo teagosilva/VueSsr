@@ -7,7 +7,7 @@ const menu = useState('menu', () => {
         },
         {
             "name": "Personagens",
-            "url": "/characters"
+            "url": "/"
         },
         {
             "name": "Comics",
