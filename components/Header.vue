@@ -18,12 +18,10 @@
           </form>
         </div>
         <div class="col-2">
-          <div class="row">
-            <div class="col- fs-6">
-              <a href=""><span class="icon-user-plus fs-4"></span> Login</a>
-            </div>
-
-          </div>
+          <a class="align-items-center d-flex " href="">
+            <span class="icon-user-plus fs-2 me-2"></span>
+            Login
+          </a>
         </div>
 
       </div>

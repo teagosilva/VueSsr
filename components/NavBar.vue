@@ -10,25 +10,17 @@ const menu = useState('menu', () => {
             "url": "/"
         },
         {
-            "name": "Home",
+            "name": "Quadrinhos",
             "url": "/"
         },
         {
-            "name": "Home",
+            "name": "Criadores",
             "url": "/"
         },
         {
-            "name": "Home",
+            "name": "Eventos",
             "url": "/"
-        },
-        {
-            "name": "Home",
-            "url": "/"
-        },
-        {
-            "name": "Home",
-            "url": "/"
-        },
+        }
     ]
 })
 </script>
