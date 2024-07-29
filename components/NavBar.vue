@@ -11,23 +11,23 @@ const menu = useState('menu', () => {
         },
         {
             "name": "Comics",
-            "url": "/comics"
+            "url": "/"
         },
         {
             "name": "Criadores",
-            "url": "/creators"
+            "url": "/"
         },
         {
             "name": "Eventos",
-            "url": "/eventos"
+            "url": "/"
         },
         {
             "name": "Series",
-            "url": "/series"
+            "url": "/"
         },
         {
             "name": "Quadrinhos",
-            "url": "/comicbook"
+            "url": "/"
         },
     ]
 })
