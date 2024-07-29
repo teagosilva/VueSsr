@@ -2,25 +2,33 @@
 const menu = useState('menu', () => {
     return [
         {
-            "name": "Home",
+            "name": "Inicio",
             "url": "/"
         },
         {
             "name": "Personagens",
-            "url": "/"
+            "url": "/characters"
         },
         {
-            "name": "Quadrinhos",
-            "url": "/"
+            "name": "Comics",
+            "url": "/comics"
         },
         {
             "name": "Criadores",
-            "url": "/"
+            "url": "/creators"
         },
         {
             "name": "Eventos",
-            "url": "/"
-        }
+            "url": "/eventos"
+        },
+        {
+            "name": "Series",
+            "url": "/series"
+        },
+        {
+            "name": "Quadrinhos",
+            "url": "/comicbook"
+        },
     ]
 })
 </script>

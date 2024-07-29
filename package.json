@@ -18,6 +18,7 @@
     "npm": "^10.8.2",
     "nuxt": "^3.12.4",
     "sass": "^1.77.8",
-    "vue": "latest"
+    "vue": "latest",
+    "webpack": "^5.93.0"
   }
 }
