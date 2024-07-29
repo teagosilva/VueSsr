@@ -1,9 +1,9 @@
 <script setup>
-
+const menu = useState('menu')
 </script>
 
 <template>
-  <footer class="bg-primary py-4 text-white">
+  <footer class="bg-primary py-4 mt-4 text-white">
     <div class="container">
       <div class="row align-items-center">
 
@@ -13,11 +13,8 @@
 
         <div class="col">
           <ul class="list-group-flush">
-            <li class="list-group-item mb-4">Some Shit</li>
-            <li class="list-group-item">Some Shit 1</li>
-            <li class="list-group-item">Some Shit 2</li>
-            <li class="list-group-item">Some Shit 3</li>
-            <li class="list-group-item">Some Shit 4</li>
+            <li class="list-group-item mb-4">Menu</li>
+            <li v-for="(item, index) in menu" class="list-group-item">{{item.name}}</li>
           </ul>
         </div>
 

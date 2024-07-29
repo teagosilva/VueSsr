@@ -24,8 +24,8 @@ defineProps({
 
 <template>
   <div>
-    <p :class="`text-${titleColor}`" class="m-0 mt-1 fs-2">{{ title }}</p>
-    <span :class="`text-${subtitleColor}`" class="fs-6">{{ subtitle }}</span>
+    <p :class="`text-${titleColor}`" class="m-0 mt-1 mb- fs-2">{{ title }}</p>
+    <p :class="`text-${subtitleColor}`" class="fs-6 mb-4">{{ subtitle }}</p>
   </div>
 </template>
 
