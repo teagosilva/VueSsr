@@ -61,7 +61,10 @@ export default defineNuxtConfig({
     }
   },
 
-  modules: ["@nuxtjs/robots", "@nuxtjs/sitemap"],
+  modules: [
+    "@nuxtjs/robots",
+    "@nuxtjs/sitemap"
+  ],
   robots: {
     allow: ['/'],
   },

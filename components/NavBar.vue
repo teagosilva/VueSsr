@@ -2,17 +2,12 @@
 const menu = useState('menu', () => {
     return [
         {
-            "name": "Inicio",
-            "url": "/"
-        },
-        {
             "name": "Personagens",
             "url": "/"
         },
         {
             "name": "Quadrinhos",
             "url": "/"
-        },
         {
             "name": "Criadores",
             "url": "/"
@@ -39,7 +34,7 @@ const menu = useState('menu', () => {
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item" v-for="item in menu">
-                        <NuxtLink class=" link-secondary nav-link active" :to="item.url"> {{ item.name }}</NuxtLink>
+                        <NuxtLink class=" link-white nav-link active" :to="item.url"> {{ item.name }}</NuxtLink>
                     </li>
                 </ul>
             </div>

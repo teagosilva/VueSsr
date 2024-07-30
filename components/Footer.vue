@@ -11,33 +11,14 @@ const menu = useState('menu')
           <img src="@/images/marvel.png" class="logo img-fluid" alt="">
         </div>
 
-        <div class="col">
+        <div class="col" v-for="item in [1,2,3]">
           <ul class="list-group-flush">
             <li class="list-group-item mb-4">Menu</li>
             <li v-for="(item, index) in menu" class="list-group-item">
-              <NuxtLink class=" link-secondary nav-link active" :to="item.url"> {{ item.name }}</NuxtLink>
+              <NuxtLink class=" link-white nav-link active" :to="item.url"> {{ item.name }}</NuxtLink>
             </li>
           </ul>
         </div>
-
-        <div class="col">
-          <ul class="list-group-flush">
-            <li class="list-group-item mb-4">Menu</li>
-            <li v-for="(item, index) in menu" class="list-group-item">
-              <NuxtLink class=" link-secondary nav-link active" :to="item.url"> {{ item.name }}</NuxtLink>
-            </li>
-          </ul>
-        </div>
-
-        <div class="col">
-          <ul class="list-group-flush">
-            <li class="list-group-item mb-4">Menu</li>
-            <li v-for="(item, index) in menu" class="list-group-item">
-              <NuxtLink class=" link-secondary nav-link active" :to="item.url"> {{ item.name }}</NuxtLink>
-            </li>
-          </ul>
-        </div>
-
 
       </div>
     </div>
