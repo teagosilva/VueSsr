@@ -10,7 +10,7 @@ const menu = useState('menu', () => {
             "url": "/"
         },
         {
-            "name": "Comics",
+            "name": "Quadrinhos",
             "url": "/"
         },
         {
@@ -24,11 +24,7 @@ const menu = useState('menu', () => {
         {
             "name": "Series",
             "url": "/"
-        },
-        {
-            "name": "Quadrinhos",
-            "url": "/"
-        },
+        }
     ]
 })
 </script>
