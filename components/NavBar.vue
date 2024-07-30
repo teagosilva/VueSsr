@@ -5,21 +5,6 @@ const menu = useState('menu', () => {
             "name": "Personagens",
             "url": "/"
         },
-        {
-            "name": "Quadrinhos",
-            "url": "/"
-        {
-            "name": "Criadores",
-            "url": "/"
-        },
-        {
-            "name": "Eventos",
-            "url": "/"
-        },
-        {
-            "name": "Series",
-            "url": "/"
-        }
     ]
 })
 </script>
