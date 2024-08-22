@@ -5,8 +5,8 @@ defineProps(['product']);
 </script>
 
 <template>
-  <div class="product">
-    <div class="product_card bg-primary">
+  <div class="product bg-primary">
+    <div class="product_card">
       <p class="product_card__name fs-3">
         <strong>{{ product.name }}</strong>
       </p>

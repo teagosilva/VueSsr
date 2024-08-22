@@ -24,19 +24,28 @@ const products = [
         }
 ]
 
-console.log(products);
-
 
 </script>
 
 <template>
-    <Slider />
+    <slider slide="hero">
+        <img src="https://fastly.picsum.photos/id/82/1700/730.jpg?hmac=xtw3Oiin_Lf7NItH3Fj8xySTMVws0EhqvIHvgdSfJYQ"
+            class="img-fluid mx-auto" alt=""></img>
+        <img src="https://fastly.picsum.photos/id/82/1700/730.jpg?hmac=xtw3Oiin_Lf7NItH3Fj8xySTMVws0EhqvIHvgdSfJYQ"
+            class="img-fluid mx-auto" alt=""></img>
+        <img src="https://fastly.picsum.photos/id/82/1700/730.jpg?hmac=xtw3Oiin_Lf7NItH3Fj8xySTMVws0EhqvIHvgdSfJYQ"
+            class="img-fluid mx-auto" alt=""></img>
+
+    </slider>
+
     <div class="container">
         <SectionTitle title="Produtos" subtitle="Melhores produtos" />
         <div class="row">
-            <div v-for="product in products" class="col-3 border border-danger">
-                <ProductCard :product="product"/>
-            </div>
+                <slider slide="products">
+                    <div v-for="product in products" class="col-3 border border-danger">
+                        <ProductCard :product="product" />
+                    </div>
+                </slider>
         </div>
     </div>
 
