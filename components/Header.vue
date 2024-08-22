@@ -1,40 +1,31 @@
-<script>
-
+<script setup>
+const menu = useMenuStore();
+const menuList = menu.$state;
 </script>
 
-
 <template>
-  <header id="header" class="d-none d-lg-block py-4 ">
-    <div class="container">
-      <div class="row align-items-center">
-
-        <div class="col">
-          <NuxtLink class=" link-white nav-link active" to="/"><img src="@/images/marvel.png" class="logo"
-              alt=""></NuxtLink>
-
+  <div>
+    <header class="bg-primary py-2 d-none d-lg-block">
+      <div class="container">
+        <div class="row">
+          <div class="col-2 d-flex">
+            <NuxtLink class="link-white nav-]link active" to="/">
+              <img src="@/images/logo.png" alt="" class="img-fluid logo" />
+            </NuxtLink>
+          </div>
+          <div class="col-8">
+            <form action="">
+              <input type="text" class="form-control ms-3 mt-2">
+            </form>
+          </div>
         </div>
-
-        <div class="col-9">
-          <form class="d-flex" role="search">
-            <input class="form-control bg-body-tertiary" type="search" placeholder="Search" aria-label="Search">
-          </form>
-        </div>
-        <div class="col d-flex justify-content-center">
-          <a class="align-items-center d-flex " href="">
-            <span class="icon-user-plus fs-2 me-2"></span>
-            Login
-          </a>
-        </div>
-
       </div>
-    </div>
-  </header>
+    </header>
+  </div>
 </template>
 
-
-<style lang="scss" scoped>
+<style>
 .logo {
-  width: 100%;
   max-width: 150px;
 }
 </style>

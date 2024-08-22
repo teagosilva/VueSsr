@@ -1,4 +1,5 @@
 import { fileURLToPath } from "url";
+import { templateCompilerOptions } from '@tresjs/core'
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
@@ -11,17 +12,7 @@ export default defineNuxtConfig({
     head: {
       charset: 'utf-8',
       viewport: 'width=device-width, initial-scale=1',
-      script: [
-        {
-          src: 'https://code.jquery.com/jquery-3.7.1.min.js'
-        },
-        {
-          src: 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js'
-        },
-        {
-          src: 'https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js'
-        }
-      ],
+      script: [],
       link: [
         {
           rel: "preconnect",
@@ -45,12 +36,12 @@ export default defineNuxtConfig({
         },
         {
           rel: "stylesheet",
-          href: "https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.css"
+          href: "https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
         },
         {
           rel: "stylesheet",
-          href: "https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.min.css"
-        }
+          href: "https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+        },
       ]
     }
   },
@@ -61,14 +52,18 @@ export default defineNuxtConfig({
     }
   },
 
-  modules: [
-    "@nuxtjs/robots",
-    "@nuxtjs/sitemap"
-  ],
+  modules: ["@nuxtjs/robots", "@nuxtjs/sitemap", "@pinia/nuxt"],
   robots: {
     allow: ['/'],
   },
   alias: {
-    "@": fileURLToPath(new URL("./src/", import.meta.url))
-  }
+    "@": fileURLToPath(new URL("./src/", import.meta.url)),
+    pinia: "/node_modules/@pinia/nuxt/node_modules/pinia/dist/pinia.mjs"
+  },
+  pinia: {
+    storesDirs: ['./src/stores/**']
+  },
+  plugins: [
+    { src: '~/plugins/jquery.js', mode: 'client' }
+  ]
 })

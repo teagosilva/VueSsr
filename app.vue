@@ -4,7 +4,6 @@
 <template>
   <div>
     <Header />
-    <NavBar />
     <NuxtPage />
     <Footer />
   </div>
