@@ -1,12 +1,6 @@
 <script lang="js" setup>
-const menu = useState('menu', () => {
-    return [
-        {
-            "name": "Personagens",
-            "url": "/"
-        },
-    ]
-})
+const menu = useMenuStore();
+const menuList = menu.$state;
 </script>
 
 <template>
@@ -18,11 +12,28 @@ const menu = useState('menu', () => {
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
-                    <li class="nav-item" v-for="item in menu">
-                        <NuxtLink class=" link-white nav-link active" :to="item.url"> {{ item.name }}</NuxtLink>
-                    </li>
+                    <div v-for="item in menuList">
+                        <li v-if="item.subcategories.length" class=" dropdown nav-item">
+                            <a class=" dropdown-toggle link-white nav-link active" data-bs-toggle="dropdown">
+                                {{ item.name }}
+
+                                <ul class="dropdown-menu">
+                                    <li v-for="subcat in item.subcategories">
+                                        <NuxtLink
+                                            class="dropdown-item" :to="subcat.url"> {{ subcat.name }}
+                                        </NuxtLink>
+                                    </li>
+                                </ul>
+                            </a>
+                        </li>
+                        <li v-else class="dropdown nav-item">
+                            <NuxtLink :class="{ 'dropdown-toggle': item.subcategories.length }"
+                                class="link-white nav-link active" :to="item.url"> {{ item.name }}</NuxtLink>
+                        </li>
+                    </div>
                 </ul>
             </div>
         </div>
     </nav>
 </template>
+

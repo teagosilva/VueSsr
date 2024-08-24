@@ -5,7 +5,11 @@ const props = defineProps({
     type: String,
     required: true,
     default: false
-  }
+  },
+  sm: {},
+  md: {},
+  lg: {},
+  xl: {}
 });
 
 onMounted(() => {
@@ -13,13 +17,14 @@ onMounted(() => {
     dots: true,
     arrows: true,
     infinite: false,
-    slidesToShow: 1,
+    adaptiveHeight: false,
+    slidesToShow: 4,
     slidesToScroll: 1,
     mofileFirst: true,
  
     responsive: [
       {
-        breakpoint: 480,
+        breakpoint: 576,
         settings: {
           arrows:false,
           slidesToShow: 1,
@@ -28,9 +33,9 @@ onMounted(() => {
         }
       },
       {
-        breakpoint: 600,
+        breakpoint: 768,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 2,
           slidesToScroll: 1,
           arrows: false,
           dots: true,
@@ -38,13 +43,23 @@ onMounted(() => {
         }
       },
       {
-        breakpoint: 1024,
+        breakpoint: 992,
+        settings: {
+          arrows: true,
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 1200,
         settings: {
           arrows: true,
           slidesToShow: 1,
           slidesToScroll: 1,
           infinite: true,
-          dots: false
+          dots: true
         }
       },
       // You can unslick at a given breakpoint now by adding:
@@ -56,15 +71,19 @@ onMounted(() => {
 </script>
 
 <template>
-  <div>
-    <section :class="`${props.slide}`">
-      <slot></slot>
-    </section>
-  </div>
+  <section :class="`${props.slide}`">
+    <slot></slot>
+  </section>
 </template>
 
 <style lang="scss">
-img {
+.slick-track {
+  display: flex;
+}
+.slick-slide {
+  display: flex !important;
+}
+.img {
   width: 100%;
   max-height: 500px;
 }
