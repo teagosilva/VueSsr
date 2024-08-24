@@ -16,7 +16,6 @@ const menuList = menu.$state;
                         <li v-if="item.subcategories.length" class=" dropdown nav-item">
                             <a class=" dropdown-toggle link-white nav-link active" data-bs-toggle="dropdown">
                                 {{ item.name }}
-
                                 <ul class="dropdown-menu">
                                     <li v-for="subcat in item.subcategories">
                                         <NuxtLink

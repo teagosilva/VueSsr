@@ -22,6 +22,8 @@ onMounted(() => {
     adaptiveHeight: props?.sm?.adaptiveHeight ?? false,
     slidesToShow: props?.sm?.slidesToShow ?? 1,
     slidesToScroll: props?.sm?.slidesToScroll ?? 1,
+    autoplay: props?.sm?.autoplay ?? false,
+    autoplaySpeed: props?.sm?.autoplaySpeed ?? 3000,
     responsive: [
       {
         breakpoint: 576,
@@ -32,6 +34,8 @@ onMounted(() => {
           adaptiveHeight: props?.sm?.adaptiveHeight ?? false,
           slidesToShow: props?.sm?.slidesToShow ?? 2,
           slidesToScroll: props?.sm?.slidesToScroll ?? 1,
+          autoplay: props?.sm?.autoplay ?? false,
+          autoplaySpeed: props?.sm?.autoplaySpeed ?? 3000,
         }
       },
       {
@@ -43,6 +47,8 @@ onMounted(() => {
           adaptiveHeight: props?.md?.adaptiveHeight ?? false,
           slidesToShow: props?.md?.slidesToShow ?? 3,
           slidesToScroll: props?.md?.slidesToScroll ?? 1,
+          autoplay: props?.md?.autoplay ?? false,
+          autoplaySpeed: props?.md?.autoplaySpeed ?? 3000,
         }
       },
       {
@@ -54,6 +60,8 @@ onMounted(() => {
           adaptiveHeight: props?.lg?.adaptiveHeight ?? false,
           slidesToShow: props?.lg?.slidesToShow ?? 4,
           slidesToScroll: props?.lg?.slidesToScroll ?? 1,
+          autoplay: props?.lg?.autoplay ?? false,
+          autoplaySpeed: props?.lg?.autoplaySpeed ?? 3000,
         }
       },
       {
@@ -65,6 +73,8 @@ onMounted(() => {
           adaptiveHeight: props?.xl?.adaptiveHeight ?? false,
           slidesToShow: props?.xl?.slidesToShow ?? 5,
           slidesToScroll: props?.xl?.slidesToScroll ?? 1,
+          autoplay: props?.xl?.autoplay ?? false,
+          autoplaySpeed: props?.xl?.autoplaySpeed ?? 3000,
         }
       },
       // You can unslick at a given breakpoint now by adding:
