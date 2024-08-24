@@ -1,6 +1,4 @@
 <script setup>
-const menu = useMenuStore();
-const menuList = menu.$state;
 </script>
 
 <template>
@@ -17,6 +15,11 @@ const menuList = menu.$state;
             <form action="">
               <input type="text" class="form-control ms-3 mt-2">
             </form>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <NavBar />
           </div>
         </div>
       </div>
