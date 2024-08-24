@@ -18,7 +18,7 @@ onMounted(() => {
     arrows: true,
     infinite: false,
     adaptiveHeight: false,
-    slidesToShow: 4,
+    slidesToShow: 5,
     slidesToScroll: 1,
     mofileFirst: true,
  
