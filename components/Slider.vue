@@ -9,57 +9,72 @@ const props = defineProps({
   sm: {},
   md: {},
   lg: {},
-  xl: {}
+  xl: {},
+  xxl: {}
 });
 
 onMounted(() => {
   $(`.${props.slide}`).slick({
-    dots: true,
-    arrows: true,
-    infinite: false,
-    adaptiveHeight: false,
-    slidesToShow: 5,
-    slidesToScroll: 1,
-    mofileFirst: true,
- 
+    mobileFirst: true,
+    dots: props?.sm?.dots ?? true,
+    arrows: props?.sm?.arrows ?? false,
+    infinite: props?.sm?.infinite ?? false,
+    adaptiveHeight: props?.sm?.adaptiveHeight ?? false,
+    slidesToShow: props?.sm?.slidesToShow ?? 1,
+    slidesToScroll: props?.sm?.slidesToScroll ?? 1,
+    autoplay: props?.sm?.autoplay ?? false,
+    autoplaySpeed: props?.sm?.autoplaySpeed ?? 3000,
     responsive: [
       {
         breakpoint: 576,
         settings: {
-          arrows:false,
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          dots: false
+          dots: props?.sm?.dots ?? true,
+          arrows: props?.sm?.arrows ?? false,
+          infinite: props?.sm?.infinite ?? false,
+          adaptiveHeight: props?.sm?.adaptiveHeight ?? false,
+          slidesToShow: props?.sm?.slidesToShow ?? 2,
+          slidesToScroll: props?.sm?.slidesToScroll ?? 1,
+          autoplay: props?.sm?.autoplay ?? false,
+          autoplaySpeed: props?.sm?.autoplaySpeed ?? 3000,
         }
       },
       {
         breakpoint: 768,
         settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-          arrows: false,
-          dots: true,
-          indicators: false
+          dots: props?.md?.dots ?? true,
+          arrows: props?.md?.arrows ?? false,
+          infinite: props?.md?.infinite ?? false,
+          adaptiveHeight: props?.md?.adaptiveHeight ?? false,
+          slidesToShow: props?.md?.slidesToShow ?? 3,
+          slidesToScroll: props?.md?.slidesToScroll ?? 1,
+          autoplay: props?.md?.autoplay ?? false,
+          autoplaySpeed: props?.md?.autoplaySpeed ?? 3000,
         }
       },
       {
         breakpoint: 992,
         settings: {
-          arrows: true,
-          slidesToShow: 3,
-          slidesToScroll: 1,
-          infinite: true,
-          dots: true
+          dots: props?.lg?.dots ?? true,
+          arrows: props?.lg?.arrows ?? false,
+          infinite: props?.lg?.infinite ?? false,
+          adaptiveHeight: props?.lg?.adaptiveHeight ?? false,
+          slidesToShow: props?.lg?.slidesToShow ?? 4,
+          slidesToScroll: props?.lg?.slidesToScroll ?? 1,
+          autoplay: props?.lg?.autoplay ?? false,
+          autoplaySpeed: props?.lg?.autoplaySpeed ?? 3000,
         }
       },
       {
         breakpoint: 1200,
         settings: {
-          arrows: true,
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          infinite: true,
-          dots: true
+          dots: props?.xl?.dots ?? true,
+          arrows: props?.xl?.arrows ?? true,
+          infinite: props?.xl?.infinite ?? false,
+          adaptiveHeight: props?.xl?.adaptiveHeight ?? false,
+          slidesToShow: props?.xl?.slidesToShow ?? 5,
+          slidesToScroll: props?.xl?.slidesToScroll ?? 1,
+          autoplay: props?.xl?.autoplay ?? false,
+          autoplaySpeed: props?.xl?.autoplaySpeed ?? 3000,
         }
       },
       // You can unslick at a given breakpoint now by adding:
